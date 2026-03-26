@@ -6,23 +6,68 @@
 
 <title>Jamiya Siddiqiya Faizanul Uloom</title>
 
-<meta name="description" content="Madrasa in Sangola, Solapur. Donate Zakat & Sadqa.">
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Arial;background:#f5f5f5;}
-header{background:#0b3d2e;color:#fff;padding:25px;text-align:center;}
-nav{background:#145c43;padding:10px;text-align:center;}
+body {
+margin:0;
+font-family:Arial;
+color:#fff;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/madrasa2.jpg');
+background-size:cover;
+background-attachment:fixed;
+}
+
+header{text-align:center;padding:40px;}
+.urdu{font-family:'Noto Nastaliq Urdu';direction:rtl;font-size:24px;}
+
+nav{
+background:rgba(0,0,0,0.6);
+text-align:center;
+padding:10px;
+position:sticky;top:0;
+}
 nav a{color:#fff;margin:10px;text-decoration:none;font-weight:bold;}
+
+.slider{max-width:1000px;margin:20px auto;overflow:hidden;border-radius:10px;}
+.slides{display:flex;animation:slide 12s infinite;}
+.slides img{width:100%;}
+
+@keyframes slide{
+0%{transform:translateX(0);}
+33%{transform:translateX(-100%);}
+66%{transform:translateX(-200%);}
+100%{transform:translateX(0);}
+}
+
 .container{max-width:1000px;margin:auto;padding:20px;}
-.box{background:#fff;padding:20px;margin-top:20px;border-radius:10px;}
-h2{color:#0b3d2e;}
+
+.box{
+background:rgba(255,255,255,0.1);
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.box:hover{transform:scale(1.03);}
+
 .gallery img{width:30%;margin:1%;border-radius:10px;}
-footer{background:#0b3d2e;color:#fff;text-align:center;padding:15px;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px;border-radius:50%;}
-.upi{background:#ff9800;color:#fff;padding:10px 15px;text-decoration:none;border-radius:5px;display:inline-block;margin-top:10px;}
-.urdu{font-family:'Noto Nastaliq Urdu';direction:rtl;font-size:20px;}
+.upi{background:#ff9800;padding:10px;color:#fff;text-decoration:none;border-radius:5px;}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+color:#fff;
+}
+
+footer{text-align:center;padding:20px;}
 </style>
 </head>
 
@@ -31,54 +76,68 @@ footer{background:#0b3d2e;color:#fff;text-align:center;padding:15px;}
 <header>
 <h1>JAMIYA SIDDIQIYA FAIZANUL ULOOM</h1>
 <p class="urdu">جامعہ صدیقیہ فیضان العلوم</p>
-<p>Sangola | Solapur | Maharashtra</p>
+<p>Sangola | Solapur</p>
 </header>
 
 <nav>
 <a href="#about">About</a>
-<a href="#gallery">Gallery</<div id="gallery" class="box">
-<h2>Gallery</h2>
-
-<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/madrasa1.jpg" width="30%">
-<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/madrasa2.jpg" width="30%">
-<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/poster.jpg" width="30%">
-
-</div>
+<a href="#gallery">Gallery</a>
 <a href="#donation">Donation</a>
+<a href="#admission">Admission</a>
+<a href="#donationform">Donation Form</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="container">
+<!-- SLIDER -->
+<div class="slider">
+<div class="slides">
+<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/madrasa1.jpg">
+<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/madrasa2.jpg">
+<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/poster.jpg">
+</div>
+</div>
 
-<!-- 🔥 FIXED POSTER -->
-<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/poster.jpg" width="100%" style="border-radius:10px;">
+<div class="container">
 
 <div id="about" class="box">
 <h2>About</h2>
-<p>Madrasa Jamiya Siddiqiya Faizanul Uloom ek deeni idara hai jahan Quran aur Deeni Taleem di jati hai.</p>
+<p>Yeh madrasa Deeni Taleem ke liye dedicated hai jahan bachon ko Quran aur Islami taleem di jati hai.</p>
 </div>
 
-<div id="gallery" class="box">
+<div id="gallery" class="box gallery">
 <h2>Gallery</h2>
-
-<!-- Agar images upload nahi hain to ye default use hoga -->
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
-
+<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/madrasa1.jpg">
+<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/madrasa2.jpg">
+<img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/poster.jpg">
 </div>
 
 <div id="donation" class="box">
 <h2>Donation</h2>
-
 <p><b>Bank:</b> Bank of India</p>
-<p><b>Account No:</b> 074910100004542</p>
+<p><b>Account:</b> 074910100004542</p>
 
 <img src="https://raw.githubusercontent.com/gulamgauskhaan-dotcom/jamiya-siddiqiya-faizanul-uloom/main/qr.png" width="200">
 
-<br>
+<br><br>
 
 <a class="upi" href="upi://pay?pa=yourupiid@upi&pn=Madrasa&cu=INR">Donate via UPI</a>
+</div>
+
+<!-- 🔥 ADMISSION FORM -->
+<div id="admission" class="box">
+<h2>Online Admission Form</h2>
+
+<iframe src="https://docs.google.com/forms/d/e/XXXXXXXXXXXX/viewform?embedded=true"
+width="100%" height="500"></iframe>
+
+</div>
+
+<!-- 🔥 DONATION FORM -->
+<div id="donationform" class="box">
+<h2>Donation Record Form</h2>
+
+<iframe src="https://docs.google.com/forms/d/e/YYYYYYYYYYYY/viewform?embedded=true"
+width="100%" height="500"></iframe>
 
 </div>
 
@@ -88,7 +147,8 @@ footer{background:#0b3d2e;color:#fff;text-align:center;padding:15px;}
 <p>📞 9922249474</p>
 <p>📲 WhatsApp: 9422700200</p>
 
-<iframe src="https://www.google.com/maps?q=Sangola,Solapur&output=embed" width="100%" height="300"></iframe>
+<iframe src="https://www.google.com/maps?q=Sangola,Solapur&output=embed"
+width="100%" height="300"></iframe>
 
 </div>
 
